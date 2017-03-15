@@ -14,3 +14,6 @@ Given value N, compute the sum of the range 1..N and pretty print it in the form
 # If N is zero:
 > f 0
 "0=0"
+
+Source:
+[href.] https://www.codewars.com/kata/56e9e4f516bcaa8d4f001763
