@@ -1,5 +1,5 @@
 Name:
-Number of people on the bus
+Number of People on the Bus
 
 Description:
 Given an array, in which each element is an array of two integers - pax boarding and pax getting off respectively - calculate the number of pax in the bus after the last bus station.
