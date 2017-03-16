@@ -80,9 +80,9 @@ class Counter
     @table.length
   end
   
+  
   private
-  
-  
+    
   def validate_hash_format(hash)
     Hash === hash && hash.values.all? { |x| Integer === x }
   end
