@@ -1,3 +1,19 @@
+#
+# [href.] https://github.com/bbatsov/ruby-style-guide/blob/master/README.md#source-code-layout
+#
+# Given a Ruby source code string, the split_semicolons method returns the string with all statements
+# and expressions previously separated by a semicolon, - on separate lines. This currently only works
+# with double-quoted strings (i.e. "", but not '') - semicolons inside double-quoted strings will be 
+# properly ignored, and should properly ignore semicolons within interpolations (i.e. "#{foo; bar}" 
+# will be left alone).
+#
+# Sorry, didn't have much time to do elaborate testing for this one. Bet this is rather buggy. Will 
+# appreciate any feedback. Thanks :)
+#
+# Example of what it is aimed to accomplish:
+# f("foo; bar; baz") -> "foo;\nbar;\nbaz"
+#
+
 def split_semicolons(src)
   def compute_ignored_ranges(src, ignore_regex)
     start  = -1
